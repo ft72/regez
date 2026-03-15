@@ -1,0 +1,10 @@
+{
+  "name": "regez",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "build": "npm run build -w packages/regez-fluent",
+    "test": "npx vitest run --project regez-fluent",
+    "dev": "npm run dev -w packages/playground"
+  }
+}

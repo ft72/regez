@@ -1,0 +1,40 @@
+{
+  "name": "regez-fluent",
+  "version": "1.0.0",
+  "description": "Fluent, English-like API for building regular expressions",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": ["dist", "LICENSE", "README.md"],
+  "keywords": [
+    "regex",
+    "regexp",
+    "regular-expression",
+    "fluent",
+    "builder",
+    "pattern"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^3.0.0"
+  }
+}
