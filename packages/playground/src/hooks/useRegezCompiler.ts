@@ -8,7 +8,7 @@ export function useRegezCompiler(code: string, debounceMs = 300) {
     error: null,
   });
 
-  const timeoutRef = useRef<ReturnType<typeof setTimeout>>();
+  const timeoutRef = useRef<ReturnType<typeof setTimeout>>(undefined);
 
   useEffect(() => {
     clearTimeout(timeoutRef.current);

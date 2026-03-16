@@ -59,9 +59,8 @@ export default function App() {
           <select
             onChange={(e) => handleExampleSelect(e.target.value)}
             className="text-xs px-2 py-1 rounded-md bg-[var(--color-surface-overlay)] border border-[var(--color-border)] text-[var(--color-text-muted)] outline-none cursor-pointer"
-            defaultValue=""
+            defaultValue="Digits Only"
           >
-            <option value="" disabled>Select...</option>
             {Object.keys(EXAMPLES).map(name => (
               <option key={name} value={name}>{name}</option>
             ))}
